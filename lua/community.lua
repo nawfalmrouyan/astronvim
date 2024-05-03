@@ -22,6 +22,7 @@ return {
   -- { import = "astrocommunity.pack.sql" },
   -- { import = "astrocommunity.pack.svelte" },
   { import = "astrocommunity.pack.tailwindcss" },
+  { import = "astrocommunity.pack.typescript" },
   -- { import = "astrocommunity.pack.terraform" },
   { import = "astrocommunity.pack.yaml" },
   -- import/override with your plugins folder
@@ -42,7 +43,7 @@ return {
   { import = "astrocommunity.git/neogit" },
   { import = "astrocommunity.lsp.ts-error-translator-nvim" },
   { import = "astrocommunity.markdown-and-latex.glow-nvim" },
-  -- { import = "astrocommunity.markdown-and-latex.peek-nvim" },
+  { import = "astrocommunity.media.codesnap-nvim" },
   { import = "astrocommunity.motion.flit-nvim" },
   { import = "astrocommunity.motion.grapple-nvim" },
   { import = "astrocommunity.motion.leap-nvim" },
