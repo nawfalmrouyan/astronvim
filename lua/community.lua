@@ -52,6 +52,7 @@ return {
   { import = "astrocommunity.motion.portal-nvim" },
   { import = "astrocommunity.motion.tabout-nvim" },
   { import = "astrocommunity.motion.vim-matchup" },
+  { import = "astrocommunity.recipes.astrolsp-no-insert-inlay-hints" },
   { import = "astrocommunity.recipes.neovide" },
   { import = "astrocommunity.scrolling.neoscroll-nvim" },
   { import = "astrocommunity.utility.noice-nvim" },
