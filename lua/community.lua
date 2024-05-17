@@ -41,7 +41,7 @@ return {
   { import = "astrocommunity.editing-support.vim-visual-multi" },
   { import = "astrocommunity.file-explorer.oil-nvim" },
   { import = "astrocommunity.fuzzy-finder.telescope-zoxide" },
-  { import = "astrocommunity.git/neogit" },
+  { import = "astrocommunity.git.neogit" },
   { import = "astrocommunity.indent.indent-rainbowline" },
   { import = "astrocommunity.lsp.ts-error-translator-nvim" },
   { import = "astrocommunity.markdown-and-latex.glow-nvim" },
