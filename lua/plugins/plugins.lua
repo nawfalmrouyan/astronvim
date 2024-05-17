@@ -28,4 +28,5 @@ return {
     },
   },
   { "dstein64/vim-startuptime" },
+  { "nvim-notify", enabled = false },
 }
