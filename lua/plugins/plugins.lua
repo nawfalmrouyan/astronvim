@@ -29,4 +29,5 @@ return {
   },
   { "dstein64/vim-startuptime" },
   { "nvim-notify", enabled = false },
+  -- { "neogit", tag = "v0.0.1" },
 }
