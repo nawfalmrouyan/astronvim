@@ -4,7 +4,7 @@ return {
     opts = {
       integrations = {
         sandwich = false,
-        -- noice = true,
+        noice = true,
         mini = true,
         leap = true,
         markdown = true,
