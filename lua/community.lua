@@ -26,10 +26,8 @@ return {
   { import = "astrocommunity.pack.yaml" },
   -- import/override with your plugins folder
   { import = "astrocommunity.bars-and-lines.vim-illuminate" },
-  -- { import = "astrocommunity.color.ccc-nvim" },
   { import = "astrocommunity.color.headlines-nvim" },
   { import = "astrocommunity.colorscheme.catppuccin" },
-  { import = "astrocommunity.colorscheme.neofusion-nvim" },
   -- { import = "astrocommunity.comment.ts-comments-nvim" },
   { import = "astrocommunity.completion.cmp-cmdline" },
   { import = "astrocommunity.completion.codeium-vim" },
