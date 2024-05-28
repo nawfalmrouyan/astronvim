@@ -28,7 +28,7 @@ return {
   { import = "astrocommunity.bars-and-lines.vim-illuminate" },
   { import = "astrocommunity.color.headlines-nvim" },
   { import = "astrocommunity.colorscheme.catppuccin" },
-  -- { import = "astrocommunity.comment.ts-comments-nvim" },
+  { import = "astrocommunity.comment.ts-comments-nvim" },
   { import = "astrocommunity.completion.cmp-cmdline" },
   { import = "astrocommunity.completion.codeium-vim" },
   { import = "astrocommunity.debugging.nvim-bqf" },
