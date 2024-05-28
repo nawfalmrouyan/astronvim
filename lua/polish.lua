@@ -63,7 +63,8 @@ vim.api.nvim_create_autocmd("ColorScheme", {
 
 if vim.g.neovide then
   -- neovide font setup
-  vim.opt.guifont = "PragmataPro Nerd Font Mono:h16"
+  -- vim.opt.guifont = "PragmataPro Nerd Font Mono:h16"
+  vim.opt.guifont = "Iosevka:h16"
 
   -- Helper function for transparency formatting
   local alpha = function() return string.format("%x", math.floor(255 * (vim.g.transparency or 0.8))) end
