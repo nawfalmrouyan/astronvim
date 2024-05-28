@@ -7,9 +7,9 @@ return {
       "nvim-lua/plenary.nvim",
     },
     config = function()
-      require("chatgpt").setup({
+      require("chatgpt").setup {
         async_api_key_cmd = "pass show chatgpt",
-      })
+      }
     end,
   },
 }
