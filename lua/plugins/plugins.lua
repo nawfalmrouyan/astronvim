@@ -1,5 +1,4 @@
 return {
-  { "christoomey/vim-tmux-navigator" },
   { "RRethy/nvim-treesitter-textsubjects", event = "User AstroFile", before = "nvim-treesitter" },
   {
     "nvim-treesitter/nvim-treesitter-textobjects",
