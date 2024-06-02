@@ -3,7 +3,7 @@ return {
   opts = {
     mac_window_bar = true,
     title = "Snapshot",
-    code_font_family = "PragmataPro Nerd Font Mono",
+    code_font_family = "Iosevka",
     watermark = "",
     bg_theme = "bamboo",
     breadcrumbs_separator = "/",
