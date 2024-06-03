@@ -1,6 +1,7 @@
 return {
   {
     "laytan/tailwind-sorter.nvim",
+    enabled = false,
     ft = { "html", "css", "javascript", "typescript", "javascriptreact", "typescriptreact", "svelte" },
     dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-lua/plenary.nvim" },
     build = "cd formatter && npm i && npm run build",
@@ -14,6 +15,7 @@ return {
   },
   {
     "roobert/tailwindcss-colorizer-cmp.nvim",
+    enabled = false,
     ft = { "html", "typescript", "javascript", "svelte", "css", "javascriptreact", "typescriptreact" },
     config = function()
       local cmp = require "cmp"
