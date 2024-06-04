@@ -55,7 +55,7 @@ return {
   { import = "astrocommunity.motion.tabout-nvim" },
   -- { import = "astrocommunity.motion.vim-matchup" },
   { import = "astrocommunity.neovim-lua-development.lazydev-nvim" },
-  { import = "astrocommunity.programming-language-support.csv-vim" },
+  -- { import = "astrocommunity.programming-language-support.csv-vim" },
   { import = "astrocommunity.recipes.astrolsp-no-insert-inlay-hints" },
   { import = "astrocommunity.recipes.neovide" },
   -- { import = "astrocommunity.recipes.telescope-nvchad-theme" },
