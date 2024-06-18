@@ -1,7 +1,7 @@
 return {
   {
     "ckolkey/ts-node-action",
-    enabled = false,
+    enabled = true,
     event = "BufRead",
     dependencies = { "nvim-treesitter" },
     init = function()
