@@ -7,15 +7,15 @@
 -- Set up custom filetypes
 vim.filetype.add {
   extension = {
-    foo = "fooscript",
+    -- foo = "fooscript",
   },
   filename = {
-    ["Foofile"] = "fooscript",
+    -- ["Foofile"] = "fooscript",
     [".env"] = "config",
     [".todo"] = "txt",
   },
   pattern = {
-    ["~/%.config/foo/.*"] = "fooscript",
+    -- ["~/%.config/foo/.*"] = "fooscript",
     ["req.*.txt"] = "config",
     ["gitconf.*"] = "gitconfig",
     [".*/hyprland%.conf"] = "hyprlang",
