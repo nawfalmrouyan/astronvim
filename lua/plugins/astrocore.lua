@@ -41,7 +41,7 @@ return {
         colorcolumn = "100",
         -- test highlight only line number.
         cursorline = true,
-        cursorlineopt = "number",
+        cursorlineopt = "both",
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
