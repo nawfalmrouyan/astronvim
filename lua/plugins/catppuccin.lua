@@ -4,16 +4,6 @@ return {
     opts = {
       transparent_background = true,
       integrations = {
-        sandwich = false,
-        noice = true,
-        mini = true,
-        leap = true,
-        markdown = true,
-        neotest = true,
-        cmp = true,
-        overseer = true,
-        lsp_trouble = true,
-        rainbow_delimiters = true,
         native_lsp = {
           enabled = true,
           virtual_text = {
