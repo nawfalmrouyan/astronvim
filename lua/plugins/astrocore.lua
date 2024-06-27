@@ -94,6 +94,20 @@ return {
         ["<leader>bo"] = { "<cmd>%bd|e#|bd#<cr>", desc = "Close all buffers but the current one" },
         ["<leader>x"] = { "<cmd>!chmod +x %<cr>", desc = "Make it executable" },
         ["<leader>k"] = { "<cmd>%s/\\s\\+$//e<cr>:noh<cr>", desc = "Delete trailing whitespace from file" },
+        ["gj"] = {
+          function()
+            vim.cmd "silent! /^#\\+\\s.*$"
+            vim.cmd "nohlsearch"
+          end,
+          desc = "Move to previous markdown header",
+        },
+        ["gk"] = {
+          function()
+            vim.cmd "silent! ?^#\\+\\s.*$"
+            vim.cmd "nohlsearch"
+          end,
+          desc = "Move to next markdown header",
+        },
       },
       i = {
         ["<M-o>"] = { "<C-o>o" },
