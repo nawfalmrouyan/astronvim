@@ -46,6 +46,7 @@ return {
   -- { import = "astrocommunity.lsp.ts-error-translator-nvim" },
   { import = "astrocommunity.markdown-and-latex.glow-nvim" },
   { import = "astrocommunity.media.codesnap-nvim" },
+  { import = "astrocommunity.media.image-nvim" },
   { import = "astrocommunity.motion.flit-nvim" },
   { import = "astrocommunity.motion.grapple-nvim" },
   { import = "astrocommunity.motion.leap-nvim" },
