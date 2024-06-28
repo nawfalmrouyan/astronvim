@@ -166,6 +166,18 @@ for char, target in pairs(all_targets) do
 end
 require("which-key").register(mappings)
 
+-- use gh to move to the beginning of the line in normal mode
+-- use gl to move to the end of the line in normal mode
+vim.keymap.set("n", "gh", "^", { desc = "Go to the beginning of the line" })
+vim.keymap.set("n", "gl", "$", { desc = "go to the end of the line" })
+vim.keymap.set("v", "gh", "^", { desc = "Go to the beginning of the line in visual mode" })
+vim.keymap.set("v", "gl", "$", { desc = "Go to the end of the line in visual mode" })
+
+-- Make the file you run the command on, executable, so you don't have to go out to the command line
+-- Had to include quotes around "%" because there are some apple dirs that contain spaces, like iCloud
+vim.keymap.set("n", "<leader>fx", '<cmd>!chmod +x "%"<CR>', { silent = true, desc = "Make file executable" })
+vim.keymap.set("n", "<leader>fX", '<cmd>!chmod -x "%"<CR>', { silent = true, desc = "Remove executable flag" })
+
 -- Paste images
 -- I use a Ctrl keymap so that I can paste images in insert mode
 -- I tried using <C-v> but duh, that's used for visual block mode
