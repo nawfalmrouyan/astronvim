@@ -31,36 +31,6 @@ vim.opt.guicursor = {
   "sm:block-blinkwait175-blinkoff150-blinkon175",
 }
 
--- in insert mode, set number
-vim.api.nvim_create_autocmd("InsertEnter", {
-  -- group = augroup "set_number",
-  pattern = { "*" },
-  callback = function()
-    vim.cmd "if &relativenumber | let g:backtorelative = 1 | setlocal number norelativenumber nocursorline | endif"
-  end,
-})
-
--- in edit mode, set reelativenumber
-vim.api.nvim_create_autocmd("InsertLeave", {
-  -- group = augroup "set_relativenumber",
-  pattern = { "*" },
-  callback = function() vim.cmd 'if exists("g:backtorelative") | setlocal relativenumber cursorline | endif' end,
-})
-
--- show diagnostic on cursor
-vim.api.nvim_create_autocmd("CursorHold", {
-  -- group = augroup "show_diagnostic",
-  pattern = { "*" },
-  callback = function() vim.cmd "lua vim.diagnostic.open_float({focusable = false})" end,
-})
-
--- red cursor
-vim.api.nvim_create_autocmd("ColorScheme", {
-  -- group = augroup "cursor_red",
-  pattern = { "*" },
-  callback = function() vim.cmd "hi Cursor guifg=red guibg=red" end,
-})
-
 if vim.g.neovide then
   -- neovide font setup
   -- vim.opt.guifont = "PragmataPro Nerd Font Mono:h16"

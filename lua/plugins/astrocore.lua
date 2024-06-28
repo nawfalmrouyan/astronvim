@@ -10,6 +10,43 @@ return {
   "AstroNvim/astrocore",
   ---@type AstroCoreOpts
   opts = {
+    autocmds = {
+      set_number = {
+        {
+          event = "InsertLeave",
+          pattern = "*",
+          desc = "Toggle set number when in normal mode",
+          group = "set_number",
+          callback = function()
+            vim.cmd "if &relativenumber | let g:backtorelative = 1 | setlocal number norelativenumber nocursorline | endif"
+          end,
+        },
+      },
+      set_relativenumber = {
+        {
+          event = "InsertLeave",
+          pattern = "*",
+          desc = "Toggle set number when in normal mode",
+          group = "set_relativenumber",
+          callback = function() vim.cmd 'if exists("g:backtorelative") | setlocal relativenumber cursorline | endif' end,
+        },
+      },
+      show_diagnostic = {
+        {
+          event = "CursorHold",
+          pattern = "*",
+          desc = "show diagnostic on Cursor",
+          callback = function() vim.cmd "lua vim.diagnostic.open_float({focusable = false})" end,
+        },
+      },
+      cursor_red = {
+        {
+          event = "ColorScheme",
+          pattern = "*",
+          callback = function() vim.cmd "hi Cursor guifg=red guibg=red" end,
+        },
+      },
+    },
     -- Configure core features of AstroNvim
     features = {
       large_buf = { size = 1024 * 500, lines = 10000 }, -- set global limits for large files for disabling features like treesitter
@@ -95,14 +132,14 @@ return {
         ["<leader>fs"] = { "<cmd>%s/\\s\\+$//e<cr>:noh<cr>", desc = "Delete trailing whitespace from file" },
         ["gj"] = {
           function()
-            vim.cmd "silent! /^#\\+\\s.*$"
+            vim.cmd "silent! /^##\\+\\s.*$"
             vim.cmd "nohlsearch"
           end,
           desc = "Move to previous markdown header",
         },
         ["gk"] = {
           function()
-            vim.cmd "silent! ?^#\\+\\s.*$"
+            vim.cmd "silent! ?^##\\+\\s.*$"
             vim.cmd "nohlsearch"
           end,
           desc = "Move to next markdown header",
