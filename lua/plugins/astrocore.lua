@@ -92,8 +92,7 @@ return {
         ["<M-w>"] = { ":set wrap! wrap?<cr>", desc = "Toggle wrap" },
         ["<M-r>"] = { ":set relativenumber! relativenumber?<cr>", desc = "Toggle relative number" },
         ["<leader>bo"] = { "<cmd>%bd|e#|bd#<cr>", desc = "Close all buffers but the current one" },
-        ["<leader>x"] = { "<cmd>!chmod +x %<cr>", desc = "Make it executable" },
-        ["<leader>k"] = { "<cmd>%s/\\s\\+$//e<cr>:noh<cr>", desc = "Delete trailing whitespace from file" },
+        ["<leader>fs"] = { "<cmd>%s/\\s\\+$//e<cr>:noh<cr>", desc = "Delete trailing whitespace from file" },
         ["gj"] = {
           function()
             vim.cmd "silent! /^#\\+\\s.*$"
