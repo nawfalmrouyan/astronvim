@@ -68,7 +68,7 @@ return {
   { import = "astrocommunity.syntax.vim-cool" },
   { import = "astrocommunity.terminal-integration.vim-tmux-navigator" },
   { import = "astrocommunity.terminal-integration.vim-tmux-yank" },
-  { import = "astrocommunity.terminal-integration.vim-tpipeline" },
+  -- { import = "astrocommunity.terminal-integration.vim-tpipeline" },
   { import = "astrocommunity.utility.mason-tool-installer-nvim" },
   { import = "astrocommunity.utility.neodim" },
   { import = "astrocommunity.utility.noice-nvim" },
