@@ -32,7 +32,7 @@ vim.opt.guicursor = {
 }
 
 require "neovide"
-require "surroundkey"
+require "keymaps"
 
 -- Call theme
 vim.cmd "colorscheme catppuccin-mocha"

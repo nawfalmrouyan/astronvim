@@ -15,6 +15,8 @@ return {
         }
       end,
       integrations = {
+        nvim_surround = true,
+        render_markdown = true,
         native_lsp = {
           enabled = true,
           virtual_text = {
@@ -25,9 +27,9 @@ return {
           },
           underlines = {
             errors = { "undercurl" },
-            -- hints = { "undercurl" },
+            hints = { "italic" },
             warnings = { "undercurl" },
-            -- information = { "undercurl" },
+            information = { "italic" },
           },
         },
       },
