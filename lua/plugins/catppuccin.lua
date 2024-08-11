@@ -17,6 +17,7 @@ return {
       integrations = {
         nvim_surround = true,
         render_markdown = true,
+        dadbod_ui = true,
         native_lsp = {
           enabled = true,
           virtual_text = {
