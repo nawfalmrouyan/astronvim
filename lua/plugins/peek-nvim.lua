@@ -1,6 +1,6 @@
 return {
   "toppair/peek.nvim",
   opts = {
-    -- app = "firefoxMD",
+    app = { "/opt/zen-browser-optimized-bin/zen-bin", "--new-window" },
   },
 }
