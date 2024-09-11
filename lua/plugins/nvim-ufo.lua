@@ -4,14 +4,11 @@ return {
     event = "User AstroFile",
     dependencies = { "kevinhwang91/promise-async", "nvim-treesitter/nvim-treesitter" },
     config = function()
-      vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
-      vim.o.foldcolumn = "1"
+      vim.o.fillchars = "eob: ,fold: ,foldopen:,foldsep: ,foldclose:"
+      vim.o.foldcolumn = "auto:9"
       vim.o.foldlevel = 99 -- feel free to decrease the value
       vim.o.foldlevelstart = 99
       vim.o.foldenable = true
-      -- vim.keymap.set("n", "zR", require("ufo").openAllFolds)
-      -- vim.keymap.set("n", "zM", require("ufo").closeAllFolds)
-      -- vim.keymap.set("n", "zP", require("ufo").peekFoldedLinesUnderCursor)
 
       local handler = function(virtText, lnum, endLnum, width, truncate)
         local newVirtText = {}
@@ -43,8 +40,10 @@ return {
 
       require("ufo").setup {
         fold_virt_text_handler = handler,
-        provider_selector = function(bufnr, filetype, buftype) return { "treesitter", "indent" } end,
       }
     end,
+    opts = {
+      provider_selector = function() return { "treesitter", "indent" } end,
+    },
   },
 }
