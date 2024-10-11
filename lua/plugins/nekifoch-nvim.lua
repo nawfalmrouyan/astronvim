@@ -1,10 +1,8 @@
 return {
-  "NeViRAIDE/nekifoch.nvim",
-  cmd = "Nekifoch",
-  opts = {
-    kitty_conf_path = vim.fn.expand "~/.config/kitty/kitty.conf",
-    which_key = {
-      enable = true,
-    },
+  {
+    "NeViRAIDE/nekifoch.nvim",
+    build = "chmod +x ./install.sh && ./install.sh",
+    cmd = "Nekifoch",
+    config = true,
   },
 }
