@@ -115,6 +115,5 @@ return {
   {
     "MeanderingProgrammer/render-markdown.nvim",
     opts = { heading = { border = true } },
-    dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.icons" },
   },
 }
