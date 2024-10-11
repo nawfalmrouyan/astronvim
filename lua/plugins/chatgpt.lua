@@ -1,6 +1,7 @@
 return {
   {
     "dreamsofcode-io/ChatGPT.nvim",
+    enabled = false,
     event = "VeryLazy",
     dependencies = {
       "MunifTanjim/nui.nvim",
