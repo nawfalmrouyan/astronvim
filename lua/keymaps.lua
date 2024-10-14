@@ -80,6 +80,10 @@
 -- end
 -- require("which-key").register(mappings)
 
+vim.keymap.set("n", "<", "<<")
+vim.keymap.set("n", ">", ">>")
+vim.keymap.set("v", "<", "<gv")
+vim.keymap.set("v", ">", ">gv")
 -- better up/down
 -- If there is no count (v:count == 0), pressing j will execute gj
 -- Useful when dealing with wrapped lines in the buffer.
