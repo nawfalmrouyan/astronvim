@@ -30,7 +30,7 @@ return {
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.comment.ts-comments-nvim" },
   { import = "astrocommunity.completion.cmp-cmdline" },
-  { import = "astrocommunity.completion.codeium-nvim" },
+  -- { import = "astrocommunity.completion.codeium-nvim" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.editing-support.bigfile-nvim" },
   { import = "astrocommunity.editing-support.dial-nvim" },
