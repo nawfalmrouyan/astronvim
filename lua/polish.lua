@@ -35,4 +35,6 @@ require "neovide"
 require "keymaps"
 
 -- Call theme
-vim.cmd "colorscheme catppuccin-mocha"
+-- vim.cmd "colorscheme catppuccin-mocha"
+vim.cmd "Nvdash"
+require("base46").theme = "catppuccin"
