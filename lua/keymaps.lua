@@ -1,3 +1,4 @@
+-- require "surround"
 -- -- Setup keymappings. Code borrowed from surround-ui
 -- local root_key = "s"
 -- local grammar_targets = {
