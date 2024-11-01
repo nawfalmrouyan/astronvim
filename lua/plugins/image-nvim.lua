@@ -1,6 +1,6 @@
 return {
   "image.nvim",
-  enabled = false,
+  enabled = true,
   opts = {
     integrations = {
       markdown = {

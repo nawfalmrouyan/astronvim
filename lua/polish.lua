@@ -38,7 +38,3 @@ require "keymaps"
 -- require("base46").theme = "catppuccin"
 -- vim.cmd "Nvdash"
 vim.cmd "colorscheme catppuccin-mocha"
-
--- for avante.nvim
-require("avante_lib").load()
-vim.opt.laststatus = 3
