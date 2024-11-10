@@ -112,8 +112,5 @@ return {
   },
 
   { "dstein64/vim-startuptime" },
-  -- {
-  --   "MeanderingProgrammer/render-markdown.nvim",
-  --   opts = { heading = { border = true } },
-  -- },
+  -- { "markview.nvim", ft = { "markdown", "codecompanion" } },
 }
