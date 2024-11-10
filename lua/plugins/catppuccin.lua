@@ -15,6 +15,7 @@ return {
         }
       end,
       integrations = {
+        blink_cmp = true,
         nvim_surround = true,
         render_markdown = true,
         dadbod_ui = true,
