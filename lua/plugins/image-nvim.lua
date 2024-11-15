@@ -1,9 +1,9 @@
 return {
   "3rd/image.nvim",
-  enabled = false,
+  enabled = true,
   opts = {
     backend = "kitty",
-    processor = "magick_cli",
+    processor = "magick_rock",
     integrations = {
       markdown = {
         only_render_image_at_cursor = true,

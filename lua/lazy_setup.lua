@@ -28,5 +28,6 @@ require("lazy").setup({
         "zipPlugin",
       },
     },
+    rocks = { hererocks = true },
   },
 } --[[@as LazyConfig]])
