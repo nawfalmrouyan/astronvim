@@ -43,7 +43,6 @@ return {
   { import = "astrocommunity.icon.mini-icons" },
   { import = "astrocommunity.markdown-and-latex.peek-nvim" },
   { import = "astrocommunity.markdown-and-latex.markview-nvim" },
-  -- { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
   { import = "astrocommunity.media.codesnap-nvim" },
   -- { import = "astrocommunity.media.image-nvim" },
   { import = "astrocommunity.motion.flit-nvim" },
