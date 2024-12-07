@@ -1,3 +1,3 @@
 return {
-  { "yuratomo/w3m.vim", event = "VeryLazy" },
+  { "yuratomo/w3m.vim", enabled = false, event = "VeryLazy" },
 }

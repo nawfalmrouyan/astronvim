@@ -7,6 +7,7 @@
 return {
 
   "andweeb/presence.nvim",
+
   {
     "ray-x/lsp_signature.nvim",
     event = "BufRead",
@@ -38,61 +39,61 @@ return {
     end,
   },
 
-  { "max397574/better-escape.nvim", enabled = true },
+  "max397574/better-escape.nvim",
 
-  {
-    "L3MON4D3/LuaSnip",
-    config = function(plugin, opts)
-      require "astronvim.plugins.configs.luasnip"(plugin, opts) -- include the default astronvim config that calls the setup call
-      -- add more custom luasnip configuration such as filetype extend or custom snippets
-      local luasnip = require "luasnip"
-      luasnip.filetype_extend("javascript", { "javascriptreact" })
-    end,
-  },
+  -- {
+  --   "L3MON4D3/LuaSnip",
+  --   config = function(plugin, opts)
+  --     require "astronvim.plugins.configs.luasnip"(plugin, opts) -- include the default astronvim config that calls the setup call
+  --     -- add more custom luasnip configuration such as filetype extend or custom snippets
+  --     local luasnip = require "luasnip"
+  --     luasnip.filetype_extend("javascript", { "javascriptreact" })
+  --   end,
+  -- },
 
-  {
-    "windwp/nvim-autopairs",
-    config = function(plugin, opts)
-      require "astronvim.plugins.configs.nvim-autopairs"(plugin, opts) -- include the default astronvim config that calls the setup call
-      -- add more custom autopairs configuration such as custom rules
-      local npairs = require "nvim-autopairs"
-      local Rule = require "nvim-autopairs.rule"
-      local cond = require "nvim-autopairs.conds"
-      npairs.add_rules(
-        {
-          Rule("$", "$", { "tex", "latex" })
-            -- don't add a pair if the next character is %
-            :with_pair(cond.not_after_regex "%%")
-            -- don't add a pair if  the previous character is xxx
-            :with_pair(
-              cond.not_before_regex("xxx", 3)
-            )
-            -- don't move right when repeat character
-            :with_move(cond.none())
-            -- don't delete if the next character is xx
-            :with_del(cond.not_after_regex "xx")
-            -- disable adding a newline when you press <cr>
-            :with_cr(cond.none()),
-        },
-        -- disable for .vim files, but it work for another filetypes
-        Rule("a", "a", "-vim")
-      )
-    end,
-  },
+  -- {
+  --   "windwp/nvim-autopairs",
+  --   config = function(plugin, opts)
+  --     require "astronvim.plugins.configs.nvim-autopairs"(plugin, opts) -- include the default astronvim config that calls the setup call
+  --     -- add more custom autopairs configuration such as custom rules
+  --     local npairs = require "nvim-autopairs"
+  --     local Rule = require "nvim-autopairs.rule"
+  --     local cond = require "nvim-autopairs.conds"
+  --     npairs.add_rules(
+  --       {
+  --         Rule("$", "$", { "tex", "latex" })
+  --           -- don't add a pair if the next character is %
+  --           :with_pair(cond.not_after_regex "%%")
+  --           -- don't add a pair if  the previous character is xxx
+  --           :with_pair(
+  --             cond.not_before_regex("xxx", 3)
+  --           )
+  --           -- don't move right when repeat character
+  --           :with_move(cond.none())
+  --           -- don't delete if the next character is xx
+  --           :with_del(cond.not_after_regex "xx")
+  --           -- disable adding a newline when you press <cr>
+  --           :with_cr(cond.none()),
+  --       },
+  --       -- disable for .vim files, but it work for another filetypes
+  --       Rule("a", "a", "-vim")
+  --     )
+  --   end,
+  -- },
 
-  { "RRethy/nvim-treesitter-textsubjects", event = "User AstroFile", before = "nvim-treesitter" },
+  -- { "RRethy/nvim-treesitter-textsubjects", event = "User AstroFile", before = "nvim-treesitter" },
 
-  {
-    "nvim-treesitter/nvim-treesitter-textobjects",
-    before = "nvim-treesitter",
-    event = "User AstroFile",
-  },
+  -- {
+  --   "nvim-treesitter/nvim-treesitter-textobjects",
+  --   before = "nvim-treesitter",
+  --   event = "User AstroFile",
+  -- },
 
-  {
-    "stevearc/oil.nvim",
-    opts = {},
-    dependencies = { "nvim-tree/nvim-web-devicons" },
-  },
+  -- {
+  --   "stevearc/oil.nvim",
+  --   opts = {},
+  --   dependencies = { "nvim-tree/nvim-web-devicons" },
+  -- },
 
   {
     "noice.nvim",
@@ -111,13 +112,33 @@ return {
     },
   },
 
-  { "dstein64/vim-startuptime" },
-  { "nvim-notify",
-  opts = {
+  "dstein64/vim-startuptime",
+
+  { 
+    "nvim-notify",
+    opts = {
       render = "wrapped-compact",
       stages = "fade_in_slide_out",
       timeout = 3000,
       top_down = false
+    }
+  },
+
+  { 
+    "fzf-lua",
+    -- config = function() require('fzf-lua').setup({'telescope'}) end,
+    opts = {
+      previewers = {
+        builtin = {
+          extensions = {
+            ["png"] = { "chafa", "-f", "kitty", "{file}" },
+            ["jpg"] = { "chafa", "-f", "kitty", "{file}" },
+            ["jpeg"] = { "chafa", "-f", "kitty", "{file}" },
+            ["svg"] = { "chafa", "-f", "kitty", "{file}" },
+          },
+          render_markdown = { enable = true, filetypes = { ["markdown"] = true } },
+        }
+      }
     }
   },
   -- { "markview.nvim", ft = { "markdown", "codecompanion" } },
