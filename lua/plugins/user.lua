@@ -131,10 +131,10 @@ return {
       previewers = {
         builtin = {
           extensions = {
-            ["png"] = { "chafa", "-f", "kitty", "{file}" },
-            ["jpg"] = { "chafa", "-f", "kitty", "{file}" },
-            ["jpeg"] = { "chafa", "-f", "kitty", "{file}" },
-            ["svg"] = { "chafa", "-f", "kitty", "{file}" },
+            ["png"] = { "ueberzugpp" },
+            ["jpg"] = { "ueberzugpp" },
+            ["jpeg"] = { "ueberzugpp" },
+            ["svg"] = { "ueberzugpp" },
           },
           render_markdown = { enable = true, filetypes = { ["markdown"] = true } },
         }
