@@ -40,8 +40,7 @@ return {
   -- { import = "astrocommunity.file-explorer.oil-nvim" },
   { import = "astrocommunity.file-explorer.mini-files" },
   { import = "astrocommunity.fuzzy-finder.fzf-lua" },
-  { import = "astrocommunity.fuzzy-finder.telescope-zoxide" },
-  -- { import = "astrocommunity.git.neogit" },
+  -- { import = "astrocommunity.fuzzy-finder.telescope-zoxide" },
   { import = "astrocommunity.icon.mini-icons" },
   -- { import = "astrocommunity.keybinding.mini-clue" },
   { import = "astrocommunity.markdown-and-latex.peek-nvim" },
@@ -69,6 +68,6 @@ return {
   { import = "astrocommunity.utility.mason-tool-installer-nvim" },
   { import = "astrocommunity.utility.neodim" },
   { import = "astrocommunity.utility.noice-nvim" },
-  { import = "astrocommunity.utility.telescope-fzy-native-nvim" },
-  { import = "astrocommunity.utility.telescope-live-grep-args-nvim" },
+  -- { import = "astrocommunity.utility.telescope-fzy-native-nvim" },
+  -- { import = "astrocommunity.utility.telescope-live-grep-args-nvim" },
 }
