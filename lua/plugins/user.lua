@@ -8,36 +8,36 @@ return {
 
   "andweeb/presence.nvim",
 
-  {
-    "ray-x/lsp_signature.nvim",
-    event = "BufRead",
-    config = function() require("lsp_signature").setup() end,
-  },
+  -- {
+  --   "ray-x/lsp_signature.nvim",
+  --   event = "BufRead",
+  --   config = function() require("lsp_signature").setup() end,
+  -- },
 
-  {
-    "goolord/alpha-nvim",
-    opts = function(_, opts)
-      -- customize the dashboard header
-      -- opts.section.header.val = {
-      --   "   ____              ______ _____ ____ ",
-      --   "  / __ \\____  ____ _/ / __ / ___// __ \\",
-      --   " / / / / __ \\/ __ `/ / __  \\__ \\/ / / /",
-      --   "/ /_/ / /_/ / /_/ / / /_/ ___/ / /_/ / ",
-      --   "\\____/ .___/\\__,_/_/_____/____/_____/  ",
-      --   "    /_/                                ",
-      -- }
-      opts.section.header.val = {
-        "________               .__ __________  ________________   ",
-        "\\_____  \\ ___________  |  |\\______   \\/   _____\\______ \\  ",
-        " /   |   \\\\____ \\__  \\ |  | |    |  _/\\_____  \\ |    |  \\ ",
-        "/    |    |  |_> / __ \\|  |_|    |   \\/        \\|    `   \\",
-        "\\_______  |   __(____  |____|______  /_______  /_______  /",
-        "        \\/|__|       \\/            \\/        \\/        \\/ ",
-      }
-
-      return opts
-    end,
-  },
+  -- {
+  --   "goolord/alpha-nvim",
+  --   opts = function(_, opts)
+  --     -- customize the dashboard header
+  --     -- opts.section.header.val = {
+  --     --   "   ____              ______ _____ ____ ",
+  --     --   "  / __ \\____  ____ _/ / __ / ___// __ \\",
+  --     --   " / / / / __ \\/ __ `/ / __  \\__ \\/ / / /",
+  --     --   "/ /_/ / /_/ / /_/ / / /_/ ___/ / /_/ / ",
+  --     --   "\\____/ .___/\\__,_/_/_____/____/_____/  ",
+  --     --   "    /_/                                ",
+  --     -- }
+  --     opts.section.header.val = {
+  --       "________               .__ __________  ________________   ",
+  --       "\\_____  \\ ___________  |  |\\______   \\/   _____\\______ \\  ",
+  --       " /   |   \\\\____ \\__  \\ |  | |    |  _/\\_____  \\ |    |  \\ ",
+  --       "/    |    |  |_> / __ \\|  |_|    |   \\/        \\|    `   \\",
+  --       "\\_______  |   __(____  |____|______  /_______  /_______  /",
+  --       "        \\/|__|       \\/            \\/        \\/        \\/ ",
+  --     }
+  --
+  --     return opts
+  --   end,
+  -- },
 
   "max397574/better-escape.nvim",
 
@@ -114,17 +114,17 @@ return {
 
   "dstein64/vim-startuptime",
 
-  { 
+  {
     "nvim-notify",
     opts = {
       render = "wrapped-compact",
       stages = "fade_in_slide_out",
       timeout = 3000,
-      top_down = false
-    }
+      top_down = false,
+    },
   },
 
-  { 
+  {
     "fzf-lua",
     -- config = function() require('fzf-lua').setup({'telescope'}) end,
     opts = {
@@ -137,9 +137,27 @@ return {
             ["svg"] = { "ueberzugpp" },
           },
           render_markdown = { enable = true, filetypes = { ["markdown"] = true } },
-        }
-      }
-    }
+        },
+      },
+    },
   },
   -- { "markview.nvim", ft = { "markdown", "codecompanion" } },
+  {
+    "NvChad/ui",
+    opts = {
+      base46 = { theme = "catppuccin" },
+      nvdash = {
+        load_on_startup = true,
+        header = {
+          "________               .__ __________  ________________   ",
+          "\\_____  \\ ___________  |  |\\______   \\/   _____\\______ \\  ",
+          " /   |   \\\\____ \\__  \\ |  | |    |  _/\\_____  \\ |    |  \\ ",
+          "/    |    |  |_> / __ \\|  |_|    |   \\/        \\|    `   \\",
+          "\\_______  |   __(____  |____|______  /_______  /_______  /",
+          "        \\/|__|       \\/            \\/        \\/        \\/ ",
+          "",
+        },
+      },
+    },
+  },
 }

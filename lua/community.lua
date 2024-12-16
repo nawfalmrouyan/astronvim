@@ -27,7 +27,7 @@ return {
   -- { import = "astrocommunity.pack.terraform" },
   { import = "astrocommunity.pack.yaml" },
   -- import/override with your plugins folder
-  { import = "astrocommunity.colorscheme.catppuccin" },
+  -- { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.comment.ts-comments-nvim" },
   -- { import = "astrocommunity.completion.avante-nvim" },
   { import = "astrocommunity.completion.cmp-cmdline" },
@@ -70,4 +70,5 @@ return {
   { import = "astrocommunity.utility.noice-nvim" },
   -- { import = "astrocommunity.utility.telescope-fzy-native-nvim" },
   -- { import = "astrocommunity.utility.telescope-live-grep-args-nvim" },
+  { import = "astrocommunity.pack.nvchad-ui" },
 }

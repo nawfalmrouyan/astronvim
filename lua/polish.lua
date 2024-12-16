@@ -31,10 +31,10 @@ vim.opt.guicursor = {
   "sm:block-blinkwait175-blinkoff150-blinkon175",
 }
 
-require "neovide"
+-- require "neovide"
 require "keymaps"
 
 -- Call theme
 -- require("base46").theme = "catppuccin"
 -- vim.cmd "Nvdash"
-vim.cmd "colorscheme catppuccin-mocha"
+-- vim.cmd "colorscheme catppuccin-mocha"
