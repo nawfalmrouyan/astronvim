@@ -31,7 +31,7 @@ vim.opt.guicursor = {
   "sm:block-blinkwait175-blinkoff150-blinkon175",
 }
 
--- require "neovide"
+require "neovide"
 require "keymaps"
 
 -- Call theme
