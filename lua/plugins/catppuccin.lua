@@ -1,6 +1,7 @@
 return {
   { -- further customize the options set by the community
     "catppuccin",
+    enabled = false,
     opts = {
       transparent_background = true,
       custom_highlights = function(colors)

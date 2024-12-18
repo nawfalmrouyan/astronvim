@@ -1,6 +1,7 @@
 return {
   {
     "kevinhwang91/nvim-ufo",
+    enabled = false,
     event = "User AstroFile",
     dependencies = { "kevinhwang91/promise-async", "nvim-treesitter/nvim-treesitter" },
     config = function()

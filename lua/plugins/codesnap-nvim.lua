@@ -1,5 +1,6 @@
 return {
   "mistricky/codesnap.nvim",
+  enabled = false,
   opts = {
     mac_window_bar = true,
     title = "Snapshot",
