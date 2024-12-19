@@ -1,18 +1,9 @@
--- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
--- You can also add or configure plugins by creating files in this `plugins/` folder
--- Here are some examples:
-
 ---@type LazySpec
 return {
 
   "andweeb/presence.nvim",
-
-  -- {
-  --   "ray-x/lsp_signature.nvim",
-  --   event = "BufRead",
-  --   config = function() require("lsp_signature").setup() end,
-  -- },
+  "max397574/better-escape.nvim",
+  "dstein64/vim-startuptime",
 
   -- {
   --   "goolord/alpha-nvim",
@@ -39,60 +30,12 @@ return {
   --   end,
   -- },
 
-  "max397574/better-escape.nvim",
-
-  -- {
-  --   "L3MON4D3/LuaSnip",
-  --   config = function(plugin, opts)
-  --     require "astronvim.plugins.configs.luasnip"(plugin, opts) -- include the default astronvim config that calls the setup call
-  --     -- add more custom luasnip configuration such as filetype extend or custom snippets
-  --     local luasnip = require "luasnip"
-  --     luasnip.filetype_extend("javascript", { "javascriptreact" })
-  --   end,
-  -- },
-
-  -- {
-  --   "windwp/nvim-autopairs",
-  --   config = function(plugin, opts)
-  --     require "astronvim.plugins.configs.nvim-autopairs"(plugin, opts) -- include the default astronvim config that calls the setup call
-  --     -- add more custom autopairs configuration such as custom rules
-  --     local npairs = require "nvim-autopairs"
-  --     local Rule = require "nvim-autopairs.rule"
-  --     local cond = require "nvim-autopairs.conds"
-  --     npairs.add_rules(
-  --       {
-  --         Rule("$", "$", { "tex", "latex" })
-  --           -- don't add a pair if the next character is %
-  --           :with_pair(cond.not_after_regex "%%")
-  --           -- don't add a pair if  the previous character is xxx
-  --           :with_pair(
-  --             cond.not_before_regex("xxx", 3)
-  --           )
-  --           -- don't move right when repeat character
-  --           :with_move(cond.none())
-  --           -- don't delete if the next character is xx
-  --           :with_del(cond.not_after_regex "xx")
-  --           -- disable adding a newline when you press <cr>
-  --           :with_cr(cond.none()),
-  --       },
-  --       -- disable for .vim files, but it work for another filetypes
-  --       Rule("a", "a", "-vim")
-  --     )
-  --   end,
-  -- },
-
   -- { "RRethy/nvim-treesitter-textsubjects", event = "User AstroFile", before = "nvim-treesitter" },
 
   -- {
   --   "nvim-treesitter/nvim-treesitter-textobjects",
   --   before = "nvim-treesitter",
   --   event = "User AstroFile",
-  -- },
-
-  -- {
-  --   "stevearc/oil.nvim",
-  --   opts = {},
-  --   dependencies = { "nvim-tree/nvim-web-devicons" },
   -- },
 
   {
@@ -111,8 +54,6 @@ return {
       },
     },
   },
-
-  "dstein64/vim-startuptime",
 
   {
     "nvim-notify",
@@ -141,7 +82,7 @@ return {
       },
     },
   },
-  -- { "markview.nvim", ft = { "markdown", "codecompanion" } },
+
   {
     "NvChad/ui",
     opts = {
@@ -164,26 +105,8 @@ return {
           " │    ╚═════╝ ╚══════╝╚═════╝      │",
           " ╚─────────────────────────────────╝",
           "",
-          --   "________               .__ __________  ________________   ",
-          --   "\\_____  \\ ___________  |  |\\______   \\/   _____\\______ \\  ",
-          --   " /   |   \\\\____ \\__  \\ |  | |    |  _/\\_____  \\ |    |  \\ ",
-          --   "/    |    |  |_> / __ \\|  |_|    |   \\/        \\|    `   \\",
-          --   "\\_______  |   __(____  |____|______  /_______  /_______  /",
-          --   "        \\/|__|       \\/            \\/        \\/        \\/ ",
-          --   "",
         },
       },
     },
   },
-  -- {
-  --   "saghen/blink.cmp",
-  --   opts = {
-  --     keymap = { preset = "super-tab" },
-  --     appearance = {
-  --       use_nvim_cmp_as_default = true,
-  --       nerd_font_variant = "normal",
-  --     },
-  --     signature = { enabled = true },
-  --   },
-  -- },
 }
