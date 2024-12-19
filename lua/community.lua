@@ -1,9 +1,3 @@
--- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
--- AstroCommunity: import any community modules here
--- We import this file in `lazy_setup.lua` before the `plugins/` folder.
--- This guarantees that the specs are processed before any user plugins.
-
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
@@ -30,19 +24,15 @@ return {
   -- { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.comment.ts-comments-nvim" },
   -- { import = "astrocommunity.completion.avante-nvim" },
-  -- { import = "astrocommunity.completion.cmp-cmdline" },
   { import = "astrocommunity.completion.blink-cmp" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.editing-support.bigfile-nvim" },
   { import = "astrocommunity.editing-support.dial-nvim" },
   { import = "astrocommunity.editing-support.true-zen-nvim" },
   { import = "astrocommunity.editing-support.undotree" },
-  -- { import = "astrocommunity.file-explorer.oil-nvim" },
   { import = "astrocommunity.file-explorer.mini-files" },
   { import = "astrocommunity.fuzzy-finder.fzf-lua" },
-  -- { import = "astrocommunity.fuzzy-finder.telescope-zoxide" },
   { import = "astrocommunity.icon.mini-icons" },
-  -- { import = "astrocommunity.keybinding.mini-clue" },
   { import = "astrocommunity.markdown-and-latex.peek-nvim" },
   { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
   { import = "astrocommunity.media.codesnap-nvim" },
@@ -54,8 +44,6 @@ return {
   { import = "astrocommunity.motion.mini-basics" },
   { import = "astrocommunity.motion.mini-move" },
   { import = "astrocommunity.motion.mini-surround" },
-  -- { import = "astrocommunity.motion.portal-nvim" },
-  -- { import = "astrocommunity.motion.tabout-nvim" },
   { import = "astrocommunity.neovim-lua-development.lazydev-nvim" },
   { import = "astrocommunity.quickfix.nvim-bqf" },
   { import = "astrocommunity.recipes.astrolsp-no-insert-inlay-hints" },
@@ -68,7 +56,5 @@ return {
   { import = "astrocommunity.utility.mason-tool-installer-nvim" },
   { import = "astrocommunity.utility.neodim" },
   { import = "astrocommunity.utility.noice-nvim" },
-  -- { import = "astrocommunity.utility.telescope-fzy-native-nvim" },
-  -- { import = "astrocommunity.utility.telescope-live-grep-args-nvim" },
   { import = "astrocommunity.pack.nvchad-ui" },
 }
