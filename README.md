@@ -1,34 +1,31 @@
-# AstroNvim Template
+# My AstroNvim Configuration
 
 **NOTE:** This is for AstroNvim v4+
 
 A template for getting started with [AstroNvim](https://github.com/AstroNvim/AstroNvim)
 
-## 🛠️ Installation
-
-#### Make a backup of your current nvim and shared folder
+## Clone the repository
 
 ```shell
-mv ~/.config/nvim ~/.config/nvim.bak
-mv ~/.local/share/nvim ~/.local/share/nvim.bak
-mv ~/.local/state/nvim ~/.local/state/nvim.bak
-mv ~/.cache/nvim ~/.cache/nvim.bak
+git clone --depth=1 https://github.com/nawfalmrouyan/astronvim ~/.config/astronvim
 ```
 
-#### Create a new user repository from this template
-
-Press the "Use this template" button above to create a new repository to store your user configuration.
-
-You can also just clone this repository directly if you do not want to track your user configuration in GitHub.
-
-#### Clone the repository
+## Start Neovim using the script below
 
 ```shell
-git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim
-```
+export NVIM_APPNAME="${NVIM_APPNAME:-"astronvim"}"
 
-#### Start Neovim
+export ASTRONVIM_RUNTIME_DIR="${ASTRONVIM_RUNTIME_DIR:-"$HOME/.local/share/astronvim"}"
+export ASTRONVIM_CONFIG_DIR="${ASTRONVIM_CONFIG_DIR:-"$HOME/.config/astronvim"}"
+export ASTRONVIM_CACHE_DIR="${ASTRONVIM_CACHE_DIR:-"$HOME/.cache/astronvim"}"
 
-```shell
-nvim
+export ASTRONVIM_BASE_DIR="${ASTRONVIM_BASE_DIR:-"$HOME/.config/astronvim"}"
+
+# Check if nvim is installed
+if ! command -v nvim &>/dev/null; then
+  echo "Error: nvim is not installed."
+  exit 1
+fi
+
+exec -a "$NVIM_APPNAME" nvim -u "$ASTRONVIM_BASE_DIR/init.lua" "$@"
 ```
