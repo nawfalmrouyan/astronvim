@@ -39,13 +39,13 @@ return {
           callback = function() vim.cmd "lua vim.diagnostic.open_float({focusable = false})" end,
         },
       },
-      cursor_red = {
-        {
-          event = "ColorScheme",
-          pattern = "*",
-          callback = function() vim.cmd "hi Cursor guifg=red guibg=red" end,
-        },
-      },
+      -- cursor_red = {
+      --     {
+      --      event = "colorscheme",
+      --      pattern = "*",
+      --      callback = function() vim.cmd "hi cursor guifg=red guibg=red" end,
+      --    },
+      --  },
     },
     -- Configure core features of AstroNvim
     features = {
