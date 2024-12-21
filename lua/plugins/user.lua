@@ -30,7 +30,7 @@ return {
   --   end,
   -- },
 
-  -- { "RRethy/nvim-treesitter-textsubjects", event = "User AstroFile", before = "nvim-treesitter" },
+  { "RRethy/nvim-treesitter-textsubjects", event = "User AstroFile", before = "nvim-treesitter" },
 
   -- {
   --   "nvim-treesitter/nvim-treesitter-textobjects",
