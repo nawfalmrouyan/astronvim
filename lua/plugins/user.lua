@@ -32,11 +32,18 @@ return {
 
   { "RRethy/nvim-treesitter-textsubjects", event = "User AstroFile", before = "nvim-treesitter" },
 
-  -- {
-  --   "nvim-treesitter/nvim-treesitter-textobjects",
-  --   before = "nvim-treesitter",
-  --   event = "User AstroFile",
-  -- },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      incremental_selection = {
+        enable = true,
+        keymaps = {
+          node_incremental = "v",
+          node_decremental = "V",
+        },
+      },
+    },
+  },
 
   {
     "noice.nvim",
