@@ -140,6 +140,17 @@ return {
           " ╚─────────────────────────────────╝",
           "",
         },
+        buttons = {
+          { txt = "  Find File", keys = "Spc f f", cmd = "FzfLua files" },
+          { txt = "  Recent Files", keys = "Spc f o", cmd = "FzfLua oldfiles" },
+          { txt = "󰈭  Find Word", keys = "Spc f w", cmd = "FzfLua live_grep" },
+          { txt = "󱥚  Themes", keys = "Spc f t", cmd = ":lua require('nvchad.themes').open()" },
+          {
+            txt = "  Last Session",
+            keys = "Spc S l",
+            cmd = ":lua function() require('resession').load 'Last Session' end,",
+          },
+        },
       },
     },
   },
