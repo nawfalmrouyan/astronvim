@@ -148,7 +148,7 @@ return {
           {
             txt = "  Last Session",
             keys = "Spc S l",
-            cmd = ":lua function() require('resession').load 'Last Session' end,",
+            cmd = ":lua require('resession').load 'Last Session'",
           },
         },
       },
