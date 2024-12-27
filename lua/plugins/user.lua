@@ -150,6 +150,18 @@ return {
             keys = "Spc S l",
             cmd = ":lua require('resession').load 'Last Session'",
           },
+          { txt = "─", hl = "NvDashLazy", no_gap = true, rep = true },
+          {
+            txt = function()
+              local stats = require("lazy").stats()
+              local ms = math.floor(stats.startuptime) .. " ms"
+              return "  Loaded " .. stats.loaded .. "/" .. stats.count .. " plugins in " .. ms
+            end,
+            hl = "NvDashLazy",
+            no_gap = true,
+          },
+
+          { txt = "─", hl = "NvDashLazy", no_gap = true, rep = true },
         },
       },
     },
