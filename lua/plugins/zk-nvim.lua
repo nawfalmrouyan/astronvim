@@ -13,8 +13,8 @@ return {
     },
     ft = "markdown",
     config = function()
-      require("zk").setup({
-        picker = "telescope",
+      require("zk").setup {
+        picker = "fzf_lua",
         lsp = {
           config = {
             cmd = { "zk", "lsp" },
@@ -25,10 +25,10 @@ return {
           enabled = true,
           filetypes = { "markdown" },
         },
-      })
+      }
 
-      local zk = require("zk")
-      local commands = require("zk.commands")
+      local zk = require "zk"
+      local commands = require "zk.commands"
 
       local function make_edit_fn(defaults, picker_options)
         return function(options)
