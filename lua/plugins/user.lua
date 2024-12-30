@@ -74,6 +74,19 @@ return {
 
   {
     "fzf-lua",
+    keys = {
+      { "<leader>fzb", "<cmd>FzfLua buffers<cr>", desc = "Buffers" },
+      { "<leader>fzc", "<cmd>FzfLua command_history<cr>", desc = "Command History" },
+      { "<leader>fzg", "<cmd>FzfLua git_files<cr>", desc = "Git Files" },
+      { "<leader>fzh", "<cmd>FzfLua help_tags<cr>", desc = "Help Tags" },
+      { "<leader>fzk", "<cmd>FzfLua keymaps<cr>", desc = "Keymaps" },
+      { "<leader>fzM", "<cmd>FzfLua manpages<cr>", desc = "Man Pages" },
+      { "<leader>fzm", "<cmd>FzfLua marks<cr>", desc = "Marks" },
+      { "<leader>fzp", "<cmd>FzfLua plugins<cr>", desc = "Plugins" },
+      { "<leader>fzr", "<cmd>FzfLua oldfiles<cr>", desc = "Recent Files" },
+      { "<leader>fzs", "<cmd>FzfLua lsp_document_symbols<cr>", desc = "Symbols" },
+      { "<leader>fzw", "<cmd>FzfLua live_grep<cr>", desc = "Find Word" },
+    },
     opts = {
       oldfiles = {
         -- In Telescope, when I used <leader>fr, it would load old buffers.
