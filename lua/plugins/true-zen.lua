@@ -1,6 +1,7 @@
 return {
   {
     "Pocco81/true-zen.nvim",
+    enabled = false,
     cmd = { "TZFocus", "TZAtaraxis" },
     init = function()
       vim.keymap.set({ "n" }, "<M-=>", "<cmd>TZFocus<cr>")
