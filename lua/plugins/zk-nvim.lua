@@ -39,6 +39,13 @@ return {
 
       commands.add("ZkOrphans", make_edit_fn({ orphan = true }, { title = "Zk Orphans" }))
       commands.add("ZkRecents", make_edit_fn({ createdAfter = "2 weeks ago" }, { title = "Zk Recents" }))
+
+      local function cmd(command) return table.concat { "<Cmd>", command, "<CR>" } end
+
+      vim.keymap.set("n", "<Leader>zn", cmd "ZkNotes")
+      vim.keymap.set("n", "<Leader>zr", cmd "ZkRecents")
+      vim.keymap.set("n", "<Leader>zt", cmd "ZkTags")
+      vim.keymap.set("n", "<Leader>zo", cmd "ZkOrphans")
     end,
   },
 }

@@ -114,6 +114,7 @@ return {
         ["<Leader>mh"] = { desc = "Headings" },
         ["<Leader>r"] = { desc = "CSV" },
         ["<Leader>rc"] = { desc = "Align CSV" },
+        ["<Leader>z"] = { desc = "Zk" },
 
         -- Personal mappings
         -- quick save
