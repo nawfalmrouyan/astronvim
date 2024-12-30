@@ -13,10 +13,10 @@ return {
 
       local function cmd(command) return table.concat { "<Cmd>", command, "<CR>" } end
 
-      vim.keymap.set("n", "<C-w>z", cmd "WindowsMaximize")
-      vim.keymap.set("n", "<C-w>_", cmd "WindowsMaximizeVertically")
-      vim.keymap.set("n", "<C-w>|", cmd "WindowsMaximizeHorizontally")
-      vim.keymap.set("n", "<C-w>=", cmd "WindowsEqualize")
+      vim.keymap.set("n", "<A-=>", cmd "WindowsMaximize")
+      vim.keymap.set("n", "<A-/>", cmd "WindowsMaximizeVertically")
+      vim.keymap.set("n", "<A-->", cmd "WindowsMaximizeHorizontally")
+      vim.keymap.set("n", "<A-0>", cmd "WindowsEqualize")
     end,
   },
 }
