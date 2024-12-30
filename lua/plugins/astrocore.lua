@@ -108,7 +108,12 @@ return {
         },
         -- tables with just a `desc` key will be registered with which-key if it's installed
         -- this is useful for naming menus
+        ["<Leader>a"] = { desc = "Image Clip" },
         ["<Leader>b"] = { desc = "Buffers" },
+        ["<Leader>m"] = { desc = "Markdown" },
+        ["<Leader>mh"] = { desc = "Headings" },
+        ["<Leader>r"] = { desc = "CSV" },
+        ["<Leader>rc"] = { desc = "Align CSV" },
 
         -- Personal mappings
         -- quick save
