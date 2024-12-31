@@ -1,8 +1,8 @@
 -- clear windows newline
 vim.keymap.set("n", ",m", function() vim.cmd ":%s/\r//g" end)
 
--- vim.keymap.set("n", "<", "<<")
--- vim.keymap.set("n", ">", ">>")
+vim.keymap.set("n", "<", "<<")
+vim.keymap.set("n", ">", ">>")
 vim.keymap.set("v", "<", "<gv")
 vim.keymap.set("v", ">", ">gv")
 -- better up/down
