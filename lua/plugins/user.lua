@@ -100,7 +100,7 @@ return {
   {
     "NvChad/ui",
     opts = {
-      base46 = { theme = "catppuccin" },
+      base46 = { theme = "catppuccin", theme_toggle = { "catppuccin", "rosepine" } },
       nvdash = {
         load_on_startup = true,
         header = {
