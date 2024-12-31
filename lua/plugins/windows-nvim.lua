@@ -5,18 +5,18 @@ return {
       "JoseConseco/middleclass",
       "anuvyklack/animation.nvim",
     },
+    keys = {
+      { "<A-=>", "<Cmd>WindowsMaximize<CR>", desc = "Maximize window" },
+      { "<A-=>", "<C-\\><C-n><Cmd>WindowsMaximize<CR>i", mode = "t", desc = "Maximize window" },
+      { "<A-/>", "<Cmd>WindowsMaximizeVertically<CR>", desc = "Maximize window vertically" },
+      { "<A-->", "<Cmd>WindowsMaximizeHorizontally<CR>", desc = "Maximize window horizontally" },
+      { "<A-0>", "<Cmd>WindowsEqualize<CR>", desc = "Equalize windows" },
+    },
     config = function()
       vim.o.winwidth = 20
       vim.o.winminwidth = 20
       vim.o.equalalways = false
       require("windows").setup()
-
-      local function cmd(command) return table.concat { "<Cmd>", command, "<CR>" } end
-
-      vim.keymap.set("n", "<A-=>", cmd "WindowsMaximize")
-      vim.keymap.set("n", "<A-/>", cmd "WindowsMaximizeVertically")
-      vim.keymap.set("n", "<A-->", cmd "WindowsMaximizeHorizontally")
-      vim.keymap.set("n", "<A-0>", cmd "WindowsEqualize")
     end,
   },
 }

@@ -2,6 +2,10 @@ return {
   {
     "olimorris/codecompanion.nvim",
     enabled = false,
+    keys = {
+      { "<C-a>", "<Cmd>CodeCompanionActions<cr>", mode = { "n", "v" }, desc = "CodeCompanionActions" },
+      { "ga", "<Cmd>CodeCompanionChat Add<cr>", mode = { "v" }, desc = "CodeCompanionChat Add" },
+    },
     dependencies = {
       "nvim-lua/plenary.nvim",
       "nvim-telescope/telescope.nvim",
@@ -14,9 +18,6 @@ return {
           inline = { adapter = "ollama" },
         },
       }
-      vim.api.nvim_set_keymap("n", "<C-a>", "<cmd>CodeCompanionActions<cr>", { noremap = true, silent = true })
-      vim.api.nvim_set_keymap("v", "<C-a>", "<cmd>CodeCompanionActions<cr>", { noremap = true, silent = true })
-      vim.api.nvim_set_keymap("v", "ga", "<cmd>CodeCompanionChat Add<cr>", { noremap = true, silent = true })
       vim.cmd [[cab cc CodeCompanion]]
     end,
   },
