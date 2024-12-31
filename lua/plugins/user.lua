@@ -176,7 +176,7 @@ return {
         ["<Tab>"] = { "select_next", "snippet_forward", "fallback" },
         ["<Esc>"] = { "hide", "fallback" },
       },
-      -- completion = { list = { selection = "manual" } },
+      completion = { list = { selection = "manual" } },
     },
   },
 }
