@@ -30,7 +30,7 @@ return {
   { import = "astrocommunity.editing-support.dial-nvim" },
   { import = "astrocommunity.editing-support.true-zen-nvim" },
   { import = "astrocommunity.editing-support.undotree" },
-  { import = "astrocommunity.file-explorer.mini-files" },
+  -- { import = "astrocommunity.file-explorer.mini-files" },
   { import = "astrocommunity.fuzzy-finder.fzf-lua" },
   { import = "astrocommunity.icon.mini-icons" },
   { import = "astrocommunity.markdown-and-latex.peek-nvim" },

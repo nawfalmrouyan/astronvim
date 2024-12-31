@@ -5,30 +5,7 @@ return {
   "max397574/better-escape.nvim",
   "dstein64/vim-startuptime",
 
-  -- {
-  --   "goolord/alpha-nvim",
-  --   opts = function(_, opts)
-  --     -- customize the dashboard header
-  --     -- opts.section.header.val = {
-  --     --   "   ____              ______ _____ ____ ",
-  --     --   "  / __ \\____  ____ _/ / __ / ___// __ \\",
-  --     --   " / / / / __ \\/ __ `/ / __  \\__ \\/ / / /",
-  --     --   "/ /_/ / /_/ / /_/ / / /_/ ___/ / /_/ / ",
-  --     --   "\\____/ .___/\\__,_/_/_____/____/_____/  ",
-  --     --   "    /_/                                ",
-  --     -- }
-  --     opts.section.header.val = {
-  --       "________               .__ __________  ________________   ",
-  --       "\\_____  \\ ___________  |  |\\______   \\/   _____\\______ \\  ",
-  --       " /   |   \\\\____ \\__  \\ |  | |    |  _/\\_____  \\ |    |  \\ ",
-  --       "/    |    |  |_> / __ \\|  |_|    |   \\/        \\|    `   \\",
-  --       "\\_______  |   __(____  |____|______  /_______  /_______  /",
-  --       "        \\/|__|       \\/            \\/        \\/        \\/ ",
-  --     }
-  --
-  --     return opts
-  --   end,
-  -- },
+  { "neo-tree.nvim", optional = true, enabled = false },
 
   { "RRethy/nvim-treesitter-textsubjects", event = "User AstroFile", before = "nvim-treesitter" },
 
