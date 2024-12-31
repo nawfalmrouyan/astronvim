@@ -110,7 +110,6 @@ return {
         -- this is useful for naming menus
         ["<Leader>a"] = { desc = "Image Clip" },
         ["<Leader>b"] = { desc = "Buffers" },
-        ["<Leader>fz"] = { desc = "FZF" },
         ["<Leader>m"] = { desc = "Markdown" },
         ["<Leader>mh"] = { desc = "Headings" },
         ["<Leader>r"] = { desc = "CSV" },
