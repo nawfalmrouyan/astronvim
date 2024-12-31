@@ -98,14 +98,16 @@ return {
         H = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
 
         -- mappings seen under group name "Buffer"
-        ["<Leader>bD"] = {
-          function()
-            require("astroui.status.heirline").buffer_picker(
-              function(bufnr) require("astrocore.buffer").close(bufnr) end
-            )
-          end,
-          desc = "Pick to close",
-        },
+        ["<leader>bo"] = { "<cmd>%bd|e#|bd#<cr>", desc = "Close all buffers but the current one" },
+        -- ["<Leader>bD"] = {
+        --   function()
+        --     require("astroui.status.heirline").buffer_picker(
+        --       function(bufnr) require("astrocore.buffer").close(bufnr) end
+        --     )
+        --   end,
+        --   desc = "Pick to close",
+        -- },
+
         -- tables with just a `desc` key will be registered with which-key if it's installed
         -- this is useful for naming menus
         ["<Leader>a"] = { desc = "Image Clip" },
@@ -134,7 +136,6 @@ return {
         ["Q"] = { "<nop>", desc = "Disable Ex mode" },
         ["<M-w>"] = { ":set wrap! wrap?<cr>", desc = "Toggle wrap" },
         ["<M-r>"] = { ":set relativenumber! relativenumber?<cr>", desc = "Toggle relative number" },
-        ["<leader>bo"] = { "<cmd>%bd|e#|bd#<cr>", desc = "Close all buffers but the current one" },
         ["<leader>fs"] = { "<cmd>%s/\\s\\+$//e<cr>:noh<cr>", desc = "Delete trailing whitespace from file" },
         ["gj"] = {
           function()
@@ -152,8 +153,8 @@ return {
         },
       },
       i = {
-        ["<M-o>"] = { "<C-o>o" },
-        ["<M-O>"] = { "<C-o>O" },
+        ["<M-o>"] = { "<C-o>o", desc = "Insert new line below" },
+        ["<M-O>"] = { "<C-o>O", desc = "Insert new line above" },
       },
       t = {
         -- setting a mapping to false will disable it
