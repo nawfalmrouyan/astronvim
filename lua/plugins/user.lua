@@ -52,7 +52,7 @@ return {
   {
     "fzf-lua",
     keys = {
-      { "<leader>fg", "<cmd>FzfLua git_files<cr>", desc = "Git Files" },
+      { "<leader>fg", "<cmd>FzfLua git_files<cr>", desc = "Find git files" },
     },
     opts = {
       oldfiles = {
