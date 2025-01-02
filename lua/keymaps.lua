@@ -1,5 +1,5 @@
 -- clear windows newline
-vim.keymap.set("n", ",m", function() vim.cmd ":%s/\r//g" end)
+vim.keymap.set("n", "<leader>fn", function() vim.cmd ":%s/\r//g" end, { desc = "Clear windows newline" })
 
 vim.keymap.set("n", "<", "<<")
 vim.keymap.set("n", ">", ">>")
