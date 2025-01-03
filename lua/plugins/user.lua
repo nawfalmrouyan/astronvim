@@ -145,15 +145,4 @@ return {
       },
     },
   },
-  {
-    "saghen/blink.cmp",
-    opts = {
-      keymap = {
-        ["<S-Tab>"] = { "select_prev", "snippet_backward", "fallback" },
-        ["<Tab>"] = { "select_next", "snippet_forward", "fallback" },
-        ["<Esc>"] = { "hide", "fallback" },
-      },
-      completion = { list = { selection = "manual" } },
-    },
-  },
 }
