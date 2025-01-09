@@ -1,7 +1,7 @@
 return {
   {
     "echasnovski/mini.files",
-    enabled = false,
+    enabled = true,
     event = "VeryLazy",
     opts = {
       windows = {

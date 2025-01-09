@@ -29,6 +29,7 @@ return {
   -- { import = "astrocommunity.editing-support.true-zen-nvim" },
   { import = "astrocommunity.editing-support.undotree" },
   { import = "astrocommunity.fuzzy-finder.fzf-lua" },
+  { import = "astrocommunity.file-explorer.mini-files" },
   { import = "astrocommunity.icon.mini-icons" },
   { import = "astrocommunity.markdown-and-latex.peek-nvim" },
   { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
