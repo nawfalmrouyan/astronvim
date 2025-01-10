@@ -48,6 +48,7 @@ return {
   { import = "astrocommunity.recipes.neovide" },
   { import = "astrocommunity.scrolling.neoscroll-nvim" },
   { import = "astrocommunity.search.sad-nvim" },
+  { import = "astrocommunity.snippet.mini-snippets" },
   { import = "astrocommunity.syntax.vim-cool" },
   { import = "astrocommunity.terminal-integration.vim-tmux-navigator" },
   { import = "astrocommunity.terminal-integration.vim-tmux-yank" },
