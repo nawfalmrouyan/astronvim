@@ -1,24 +1,37 @@
 return {
-  {
-    "olimorris/codecompanion.nvim",
-    enabled = false,
-    keys = {
-      { "<C-a>", "<Cmd>CodeCompanionActions<cr>", mode = { "n", "v" }, desc = "CodeCompanionActions" },
-      { "ga", "<Cmd>CodeCompanionChat Add<cr>", mode = { "v" }, desc = "CodeCompanionChat Add" },
-    },
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "nvim-telescope/telescope.nvim",
-      "nvim-treesitter/nvim-treesitter",
-    },
-    config = function()
-      require("codecompanion").setup {
-        strategies = {
-          chat = { adapter = "ollama" },
-          inline = { adapter = "ollama" },
-        },
-      }
-      vim.cmd [[cab cc CodeCompanion]]
-    end,
+  "olimorris/codecompanion.nvim",
+  dependencies = {
+    "nvim-lua/plenary.nvim",
+    "nvim-treesitter/nvim-treesitter",
   },
+  cmd = {
+    "CodeCompanion",
+    "CodeCompanionChat",
+    "CodeCompanionToggle",
+    "CodeCompanionActions",
+  },
+  config = function()
+    require("codecompanion").setup {
+      adapters = {
+        deepseek = function()
+          return require("codecompanion.adapters").extend("ollama", {
+            name = "deepseek",
+            schema = {
+              model = {
+                default = "deepseek-r1:7b",
+              },
+            },
+          })
+        end,
+      },
+      strategies = {
+        chat = {
+          adapter = "deepseek",
+        },
+        inline = {
+          adapter = "deepseek",
+        },
+      },
+    }
+  end,
 }
