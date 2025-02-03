@@ -1,6 +1,8 @@
 return {
   {
-    "zk-org/zk-nvim",
+    -- "zk-org/zk-nvim",
+    "pkazmier/zk-nvim",
+    branch = "snacks-picker",
     cmd = {
       "ZkNewFromTitleSelection",
       "ZkNewFromContentSelection",
@@ -14,7 +16,7 @@ return {
     ft = "markdown",
     config = function()
       require("zk").setup {
-        picker = "fzf_lua",
+        picker = "snacks_picker",
         lsp = {
           config = {
             cmd = { "zk", "lsp" },
