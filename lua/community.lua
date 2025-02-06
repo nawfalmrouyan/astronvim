@@ -55,6 +55,6 @@ return {
   { import = "astrocommunity.terminal-integration.vim-tmux-yank" },
   { import = "astrocommunity.utility.mason-tool-installer-nvim" },
   { import = "astrocommunity.utility.neodim" },
-  -- { import = "astrocommunity.utility.noice-nvim" },
+  { import = "astrocommunity.utility.noice-nvim" },
   --  { import = "astrocommunity.pack.nvchad-ui" },
 }
