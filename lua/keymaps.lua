@@ -1,3 +1,4 @@
+vim.keymap.set("n", "<leader>h", function() Snacks.dashboard() end, { desc = "Snacks dashboard" })
 -- clear windows newline
 vim.keymap.set("n", "<leader>fn", function() vim.cmd ":%s/\r//g" end, { desc = "Clear windows newline" })
 
