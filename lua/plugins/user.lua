@@ -23,22 +23,22 @@ return {
     },
   },
 
-  -- {
-  --   "noice.nvim",
-  --   opts = {
-  --     lsp = {
-  --       progress = { enabled = false },
-  --       signature = { enabled = false },
-  --     },
-  --     views = {
-  --       mini = {
-  --         win_options = {
-  --           winblend = 0,
-  --         },
-  --       },
-  --     },
-  --   },
-  -- },
+  {
+    "noice.nvim",
+    opts = {
+      lsp = {
+        progress = { enabled = false },
+        signature = { enabled = false },
+      },
+      views = {
+        mini = {
+          win_options = {
+            winblend = 0,
+          },
+        },
+      },
+    },
+  },
 
   -- {
   --   "nvim-notify",

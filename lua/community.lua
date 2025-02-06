@@ -28,6 +28,7 @@ return {
   -- { import = "astrocommunity.editing-support.dial-nvim" },
   -- { import = "astrocommunity.editing-support.true-zen-nvim" },
   { import = "astrocommunity.editing-support.undotree" },
+  { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   -- { import = "astrocommunity.fuzzy-finder.fzf-lua" },
   { import = "astrocommunity.fuzzy-finder.snacks-picker" },
   -- { import = "astrocommunity.file-explorer.mini-files" },
