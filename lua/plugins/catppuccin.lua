@@ -1,7 +1,7 @@
 return {
   { -- further customize the options set by the community
-    "catppuccin",
-    enabled = false,
+    "catppuccin/nvim",
+    priority = 1000,
     opts = {
       transparent_background = true,
       custom_highlights = function(colors)
@@ -16,10 +16,33 @@ return {
         }
       end,
       integrations = {
+        aerial = true,
+        alpha = true,
         blink_cmp = true,
-        -- nvim_surround = true,
-        render_markdown = true,
         dadbod_ui = true,
+        dap = true,
+        dashboard = true,
+        fzf = true,
+        gitsigns = true,
+        indent_blankline = { enabled = true },
+        leap = true,
+        lsp_trouble = true,
+        markdown = true,
+        mason = true,
+        mini = true,
+        neotest = true,
+        noice = true,
+        notify = true,
+        nvim_surround = true,
+        quickfix = true,
+        render_markdown = true,
+        semantic_tokens = true,
+        snacks = true,
+        symbol_outline = true,
+        treesitter = true,
+        treesitter_context = true,
+        ts_rainbow2 = true,
+        which_key = true,
         native_lsp = {
           enabled = true,
           virtual_text = {

@@ -6,6 +6,7 @@ return {
   "dstein64/vim-startuptime",
 
   { "neo-tree.nvim", optional = true, enabled = false },
+  { "alpha-nvim", optional = true, enabled = false },
 
   { "RRethy/nvim-treesitter-textsubjects", event = "User AstroFile", before = "nvim-treesitter" },
 
@@ -22,32 +23,32 @@ return {
     },
   },
 
-  {
-    "noice.nvim",
-    opts = {
-      lsp = {
-        progress = { enabled = false },
-        signature = { enabled = false },
-      },
-      views = {
-        mini = {
-          win_options = {
-            winblend = 0,
-          },
-        },
-      },
-    },
-  },
+  -- {
+  --   "noice.nvim",
+  --   opts = {
+  --     lsp = {
+  --       progress = { enabled = false },
+  --       signature = { enabled = false },
+  --     },
+  --     views = {
+  --       mini = {
+  --         win_options = {
+  --           winblend = 0,
+  --         },
+  --       },
+  --     },
+  --   },
+  -- },
 
-  {
-    "nvim-notify",
-    opts = {
-      render = "wrapped-compact",
-      stages = "fade_in_slide_out",
-      timeout = 3000,
-      top_down = false,
-    },
-  },
+  -- {
+  --   "nvim-notify",
+  --   opts = {
+  --     render = "wrapped-compact",
+  --     stages = "fade_in_slide_out",
+  --     timeout = 3000,
+  --     top_down = false,
+  --   },
+  -- },
 
   -- {
   --   "fzf-lua",
@@ -97,67 +98,67 @@ return {
   --   },
   -- },
 
-  {
-    "nvzone/typr",
-    dependencies = "nvzone/volt",
-    opts = {},
-    cmd = { "Typr", "TyprStats" },
-  },
+  -- {
+  --   "nvzone/typr",
+  --   dependencies = "nvzone/volt",
+  --   opts = {},
+  --   cmd = { "Typr", "TyprStats" },
+  -- },
 
-  {
-    "NvChad/ui",
-    opts = {
-      base46 = { theme = "catppuccin", theme_toggle = { "catppuccin", "rosepine" } },
-      nvdash = {
-        load_on_startup = true,
-        header = {
-          -- "╔─────────────────────────────────╗",
-          -- "│ ██████╗ ██████╗  █████╗ ██╗     │",
-          -- "│██╔═══██╗██╔══██╗██╔══██╗██║     │",
-          -- "│██║   ██║██████╔╝███████║██║     │",
-          -- "│██║   ██║██╔═══╝ ██╔══██║██║     │",
-          -- "│╚██████╔╝██║     ██║  ██║███████╗│",
-          -- "│ ╚═════╝ ╚═╝     ╚═╝  ╚═╝╚══════╝│",
-          -- "│    ██████╗ ███████╗██████╗      │",
-          -- "│    ██╔══██╗██╔════╝██╔══██╗     │",
-          -- "│    ██████╔╝███████╗██║  ██║     │",
-          -- "│    ██╔══██╗╚════██║██║  ██║     │",
-          -- "│    ██████╔╝███████║██████╔╝     │",
-          -- "│    ╚═════╝ ╚══════╝╚═════╝      │",
-          -- "╚─────────────────────────────────╝",
-          "█████████████████████████████████████████████████",
-          "█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█",
-          "█░░░░░░░░░░░░░░░░░░░█▀▀▀░█░░░░░░░░█░░░█░█░░░░░░░█",
-          "█░░░░░░░░░░░█░░░█░░░▀▀▀█░█░░░█▀█░░█░░░█░█░░░░░░░█",
-          "█░░░░░░░░░░░█▀▀▀▀▀▀▀▀▀▀▀░▀░░░▀▀▀▀▀▀▀▀▀▀░▀░░░░░░░█",
-          "█░░░░░░░▀▀▀▀▀░░░▀░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█",
-          "█████████████████████████████████████████████████",
-          "",
-        },
-        buttons = {
-          { txt = "  Find File", keys = "Spc f f", cmd = "FzfLua files" },
-          { txt = "  Recent Files", keys = "Spc f o", cmd = "FzfLua oldfiles" },
-          { txt = "󰈭  Find Word", keys = "Spc f w", cmd = "FzfLua live_grep" },
-          { txt = "󱥚  Themes", keys = "Spc f t", cmd = ":lua require('nvchad.themes').open()" },
-          {
-            txt = "  Last Session",
-            keys = "Spc S l",
-            cmd = ":lua require('resession').load 'Last Session'",
-          },
-          { txt = "─", hl = "NvDashLazy", no_gap = true, rep = true },
-          {
-            txt = function()
-              local stats = require("lazy").stats()
-              local ms = math.floor(stats.startuptime) .. " ms"
-              return "  Loaded " .. stats.loaded .. "/" .. stats.count .. " plugins in " .. ms
-            end,
-            hl = "NvDashLazy",
-            no_gap = true,
-          },
-
-          { txt = "─", hl = "NvDashLazy", no_gap = true, rep = true },
-        },
-      },
-    },
-  },
+  -- {
+  --   "NvChad/ui",
+  --   opts = {
+  --     base46 = { theme = "catppuccin", theme_toggle = { "catppuccin", "rosepine" } },
+  --     nvdash = {
+  --       load_on_startup = true,
+  --       header = {
+  --         -- "╔─────────────────────────────────╗",
+  --         -- "│ ██████╗ ██████╗  █████╗ ██╗     │",
+  --         -- "│██╔═══██╗██╔══██╗██╔══██╗██║     │",
+  --         -- "│██║   ██║██████╔╝███████║██║     │",
+  --         -- "│██║   ██║██╔═══╝ ██╔══██║██║     │",
+  --         -- "│╚██████╔╝██║     ██║  ██║███████╗│",
+  --         -- "│ ╚═════╝ ╚═╝     ╚═╝  ╚═╝╚══════╝│",
+  --         -- "│    ██████╗ ███████╗██████╗      │",
+  --         -- "│    ██╔══██╗██╔════╝██╔══██╗     │",
+  --         -- "│    ██████╔╝███████╗██║  ██║     │",
+  --         -- "│    ██╔══██╗╚════██║██║  ██║     │",
+  --         -- "│    ██████╔╝███████║██████╔╝     │",
+  --         -- "│    ╚═════╝ ╚══════╝╚═════╝      │",
+  --         -- "╚─────────────────────────────────╝",
+  --         "█████████████████████████████████████████████████",
+  --         "█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█",
+  --         "█░░░░░░░░░░░░░░░░░░░█▀▀▀░█░░░░░░░░█░░░█░█░░░░░░░█",
+  --         "█░░░░░░░░░░░█░░░█░░░▀▀▀█░█░░░█▀█░░█░░░█░█░░░░░░░█",
+  --         "█░░░░░░░░░░░█▀▀▀▀▀▀▀▀▀▀▀░▀░░░▀▀▀▀▀▀▀▀▀▀░▀░░░░░░░█",
+  --         "█░░░░░░░▀▀▀▀▀░░░▀░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█",
+  --         "█████████████████████████████████████████████████",
+  --         "",
+  --       },
+  --       buttons = {
+  --         { txt = "  Find File", keys = "Spc f f", cmd = "FzfLua files" },
+  --         { txt = "  Recent Files", keys = "Spc f o", cmd = "FzfLua oldfiles" },
+  --         { txt = "󰈭  Find Word", keys = "Spc f w", cmd = "FzfLua live_grep" },
+  --         { txt = "󱥚  Themes", keys = "Spc f t", cmd = ":lua require('nvchad.themes').open()" },
+  --         {
+  --           txt = "  Last Session",
+  --           keys = "Spc S l",
+  --           cmd = ":lua require('resession').load 'Last Session'",
+  --         },
+  --         { txt = "─", hl = "NvDashLazy", no_gap = true, rep = true },
+  --         {
+  --           txt = function()
+  --             local stats = require("lazy").stats()
+  --             local ms = math.floor(stats.startuptime) .. " ms"
+  --             return "  Loaded " .. stats.loaded .. "/" .. stats.count .. " plugins in " .. ms
+  --           end,
+  --           hl = "NvDashLazy",
+  --           no_gap = true,
+  --         },
+  --
+  --         { txt = "─", hl = "NvDashLazy", no_gap = true, rep = true },
+  --       },
+  --     },
+  --   },
+  -- },
 }

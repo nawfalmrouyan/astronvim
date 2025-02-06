@@ -1,6 +1,7 @@
 return {
   "luukvbaal/statuscol.nvim",
   event = "User AstroFile",
+  enabled = false,
   config = function()
     local builtin = require "statuscol.builtin"
     require("statuscol").setup {
