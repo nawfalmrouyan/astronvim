@@ -1,6 +1,7 @@
 return {
   { -- further customize the options set by the community
     "catppuccin/nvim",
+    name = "catppuccin",
     priority = 1000,
     opts = {
       transparent_background = true,
@@ -60,5 +61,6 @@ return {
         },
       },
     },
+    config = function() require("catppuccin").setup {} end,
   },
 }
