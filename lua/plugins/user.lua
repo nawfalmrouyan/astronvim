@@ -9,6 +9,7 @@ return {
   { "alpha-nvim", optional = true, enabled = false },
 
   { "RRethy/nvim-treesitter-textsubjects", event = "User AstroFile", before = "nvim-treesitter" },
+  { "echasnovski/mini.sessions", version = false },
 
   {
     "nvim-treesitter/nvim-treesitter",
