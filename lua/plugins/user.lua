@@ -1,7 +1,7 @@
 ---@type LazySpec
 return {
 
-  "andweeb/presence.nvim",
+  -- "andweeb/presence.nvim",
   "max397574/better-escape.nvim",
   "dstein64/vim-startuptime",
 
@@ -9,6 +9,8 @@ return {
   { "alpha-nvim", optional = true, enabled = false },
 
   { "RRethy/nvim-treesitter-textsubjects", event = "User AstroFile", before = "nvim-treesitter" },
+
+  { "tpope/vim-fugitive", cmd = "G" },
 
   {
     "folke/persistence.nvim",

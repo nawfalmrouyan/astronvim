@@ -1,6 +1,7 @@
 return {
   {
     "pmizio/typescript-tools.nvim",
+    enabled = false,
     dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
 
     enabled = vim.g.has_node,
@@ -69,6 +70,7 @@ return {
 
   {
     "dmmulroy/tsc.nvim",
+    enabled = false,
 
     cmd = { "TSC" },
 
