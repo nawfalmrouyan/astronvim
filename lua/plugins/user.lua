@@ -27,6 +27,7 @@ return {
   {
     "noice.nvim",
     opts = {
+      notify = { enabled = false },
       lsp = {
         progress = { enabled = false },
         signature = { enabled = false },
