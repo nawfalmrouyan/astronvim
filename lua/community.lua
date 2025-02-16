@@ -46,7 +46,7 @@ return {
   { import = "astrocommunity.motion.mini-surround" },
   -- { import = "astrocommunity.neovim-lua-development.lazydev-nvim" },
   { import = "astrocommunity.quickfix.nvim-bqf" },
-  { import = "astrocommunity.recipes.astrolsp-no-insert-inlay-hints" },
+  -- { import = "astrocommunity.recipes.astrolsp-no-insert-inlay-hints" },
   { import = "astrocommunity.recipes.neovide" },
   -- { import = "astrocommunity.scrolling.neoscroll-nvim" },
   { import = "astrocommunity.search.sad-nvim" },
