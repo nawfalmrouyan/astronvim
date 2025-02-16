@@ -18,7 +18,7 @@ return {
             name = "deepseek",
             schema = {
               model = {
-                default = "deepseek-r1:7b",
+                default = "deepseek-r1:8b",
               },
             },
           })
