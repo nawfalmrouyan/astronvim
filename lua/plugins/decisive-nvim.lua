@@ -1,5 +1,6 @@
 return {
   "emmanueltouzery/decisive.nvim",
+  enabled = false,
   ft = "csv",
   keys = {
     { "<leader>rca", ":lua require('decisive').align_csv({})<cr>", desc = "align CSV" },

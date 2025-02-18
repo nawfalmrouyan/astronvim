@@ -114,8 +114,6 @@ return {
         ["<Leader>b"] = { desc = "Buffers" },
         ["<Leader>m"] = { desc = "Markdown" },
         ["<Leader>mh"] = { desc = "Headings" },
-        ["<Leader>r"] = { desc = "CSV" },
-        ["<Leader>rc"] = { desc = "Align CSV" },
         ["<Leader>z"] = { desc = "Zk" },
         ["<Leader>fs"] = false,
 
@@ -130,8 +128,8 @@ return {
         ["<MiddleMouse>"] = { "i<MiddleMouse><ESC>", desc = "Paste mode" },
         -- From the primeagen
         -- ["J"] = "mzJ`z"
-        ["<C-d>"] = { "<C-d>zz", desc = "Scroll half page down" },
-        ["<C-u>"] = { "<C-u>zz", desc = "Scroll half page up" },
+        -- ["<C-d>"] = { "<C-d>zz", desc = "Scroll half page down" },
+        -- ["<C-u>"] = { "<C-u>zz", desc = "Scroll half page up" },
         ["n"] = { "nzzzv", desc = "Next search result" },
         ["N"] = { "Nzzzv", desc = "Previous search result" },
         ["Q"] = { "<nop>", desc = "Disable Ex mode" },
