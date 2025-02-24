@@ -7,6 +7,7 @@ return {
 
   { "neo-tree.nvim", optional = true, enabled = false },
   { "alpha-nvim", optional = true, enabled = false },
+  { "none-ls", optional = true, enabled = false },
 
   { "RRethy/nvim-treesitter-textsubjects", event = "User AstroFile", before = "nvim-treesitter" },
 
