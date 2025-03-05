@@ -5,17 +5,17 @@ return {
     priority = 1000,
     opts = {
       transparent_background = true,
-      custom_highlights = function(colors)
-        local u = require "catppuccin.utils.colors"
-        return {
-          CursorLine = {
-            bg = u.vary_color(
-              { latte = u.lighten(colors.mantle, 0.70, colors.base) },
-              u.darken(colors.surface0, 0.64, colors.base)
-            ),
-          },
-        }
-      end,
+      -- custom_highlights = function(colors)
+      --   local u = require "catppuccin.utils.colors"
+      --   return {
+      --     CursorLine = {
+      --       bg = u.vary_color(
+      --         { latte = u.lighten(colors.mantle, 0.70, colors.base) },
+      --         u.darken(colors.surface0, 0.64, colors.base)
+      --       ),
+      --     },
+      --   }
+      -- end,
       integrations = {
         -- aerial = true,
         -- alpha = true,
