@@ -49,6 +49,18 @@ return {
       },
     },
   },
+  {
+    "arnamak/stay-centered.nvim",
+    opts = function()
+      require("stay-centered").setup {}
+      vim.keymap.set(
+        "n",
+        "<leader>US",
+        function() require("stay-centered").toggle() end,
+        { desc = "Toggle stay-centered" }
+      )
+    end,
+  },
 
   -- {
   --   "nvim-notify",
